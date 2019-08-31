@@ -1,0 +1,17 @@
+THIS:
+1) In object method, this refers to the "owner" of the method
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+2) When alone, this refers to global object
+var x = this;
+document.getElementById("demo").innerHTML = x;
+
+LET:
+This introdused block scope in javascript which was not there before. So let keyword makes a variable accessible only inside block where declared
