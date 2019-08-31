@@ -1,0 +1,8 @@
+//This removes duplicate from string array
+public void removeDuplicate(string[] str)
+        {
+            string[] b = str.Distinct().ToArray();
+            foreach (string s in b)
+                Console.WriteLine(s);
+            Console.ReadLine();
+        }
