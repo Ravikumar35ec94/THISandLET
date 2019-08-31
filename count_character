@@ -1,0 +1,25 @@
+public void printcount(string[] array)
+        {
+            string finalstring=string.Empty;
+            //takes the entire array and forms a single string
+            foreach(string a in array){
+                finalstring=finalstring+a;
+            }
+             //Checks the count and displays
+            while (finalstring.Length > 0)
+            {
+                Console.Write(finalstring[0] + " : ");
+                int count = 0;
+                for (int j = 0; j < finalstring.Length; j++)
+                {
+                    if (finalstring[0] == finalstring[j])
+                    {
+                        count++;
+                    }
+                }
+                Console.WriteLine(count);
+                finalstring = finalstring.Replace(finalstring[0].ToString(), string.Empty);
+            }
+            Console.ReadLine();
+        }
+ 
